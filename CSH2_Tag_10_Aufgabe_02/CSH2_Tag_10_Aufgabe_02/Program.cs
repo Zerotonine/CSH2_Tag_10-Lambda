@@ -19,11 +19,11 @@ namespace CSH2_Tag_10_Aufgabe_02
         static void Sortiere(ref string[] arr, Func<string, string, bool> func)
         {
             string temp;
-            for (int i = 0; i < arr.Length -2; i++)
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-                for(int j = 0; j < arr.Length -2; j++)
+                for (int j = 0; j < arr.Length - 1; j++)
                 {
-                    if(func(arr[j+1], arr[j]))
+                    if (func(arr[j], arr[j + 1]))
                     {
                         temp = arr[j];
                         arr[j] = arr[j + 1];
@@ -38,7 +38,7 @@ namespace CSH2_Tag_10_Aufgabe_02
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("---Ausgabe Array---");
             int i = 1;
-            foreach(string s in arr)
+            foreach (string s in arr)
             {
                 sb.AppendLine($"String Nr. {i}:\t{s}");
                 i++;
@@ -48,3 +48,4 @@ namespace CSH2_Tag_10_Aufgabe_02
         }
     }
 }
+
