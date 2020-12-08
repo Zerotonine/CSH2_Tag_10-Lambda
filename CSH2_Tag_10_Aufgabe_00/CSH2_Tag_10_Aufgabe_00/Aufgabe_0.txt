@@ -1,0 +1,7 @@
+﻿/* Aufgabe 0 (Basics)
+ * Klasse "Sportler" mit void Methode "FühreAktionAus", welche als Parameter eine Action 
+ * (verwenden Sie den in System definierten Delegaten "Action") erwartet und die Aktion nach einer Prüfung auf Null ausführt.
+ * In der Main:
+ * Erstellen Sie einen Sportler, rufen Sie "FühreAktionAus" auf, dabei soll die Methode einmal "Ich laufe." und einmal "Ich schwimme." 
+ * auf der Konsole ausgeben. Verwenden Sie dafür Lambda-Expressions.
+ */
